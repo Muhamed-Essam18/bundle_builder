@@ -1,5 +1,7 @@
 export type StepIconName = "camera" | "shield" | "sensor" | "protection";
+
 export type Step = {
+  iconImage: string | Blob | undefined;
   id: string;
   label: string;
   title: string;
@@ -11,9 +13,12 @@ export type Variant = {
   id: string;
   label: string;
   swatch: string;
+  image?: string;
+  thumbnail?: string;
+  pic?: string;
 };
 
-export type ProductCategory = "Cameras" | "Sensors" | "Accessories" | "Plan";
+export type ProductCategory = "Cameras" | "Sensors" | "Accessories" | "Plan" | "Shipping";
 
 export type Product = {
   id: string;
@@ -28,7 +33,6 @@ export type Product = {
   badge?: string;
   variants?: Variant[];
   defaultVariantId?: string;
-  locked?: boolean;
   reviewOnly?: boolean;
   initialQuantities: Record<string, number>;
 };
@@ -38,14 +42,35 @@ export type BundleData = {
   products: Product[];
 };
 
+export type QuantityState = Record<string, Record<string, number>>;
+export type ActiveVariantState = Record<string, string>;
+
+export type ReviewLine = {
+  key: string;
+  productId: string;
+  title: string;
+  image: string;
+  category: ProductCategory;
+  variantLabel?: string;
+  variantImage?: string;
+  variantId: string;
+  quantity: number;
+  unitPrice: number;
+  unitCompareAt?: number;
+};
+
+export type BundleTotals = {
+  subtotal: number;
+  compareTotal: number;
+  savings: number;
+};
+
 export type PersistedBuilderState = {
   quantities?: QuantityState;
   activeVariants?: ActiveVariantState;
   openStepId?: string;
 };
 
-export type QuantityState = Record<string, Record<string, number>>;
-export type ActiveVariantState = Record<string, string>;
 export type HomeState = {
   quantities: QuantityState;
   activeVariants: ActiveVariantState;

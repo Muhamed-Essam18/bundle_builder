@@ -1,13 +1,7 @@
 
-import { useReducer } from "react";
-import Home from "@/components/home";
 
 import getProducts from "@/lib/getProducts";
-
-
-
-
-
+import HomeComponent from "@/components/home";
 export default async function Home() {
 
   // call products function to get the data
@@ -16,7 +10,7 @@ export default async function Home() {
 
   return (
     <div className="">
-      <Home data={data} />
+      <HomeComponent data={data} />
     </div>
   );
 }

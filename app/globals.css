@@ -1,22 +1,85 @@
 @import "tailwindcss";
 
 :root {
- 
+  --page-bg: #f3f5f8;
+  --text: #1f2430;
+  --app-font-stack: var(--font-gilroy), "Avenir Next", "Nunito Sans", "Segoe UI", sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--app-font-stack);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-   
+    --page-bg: #f3f5f8;
+    --text: #1f2430;
   }
 }
 
+html,
 body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: var(--app-font-stack) !important;
+}
+
+* {
+  font-family: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.page-shell {
+  margin: 0 auto;
+  width: min(1540px, 100%);
+  padding: 26px 18px 40px;
+}
+
+.builder-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 18px;
+}
+
+@media (min-width: 900px) and (max-width: 1279px) {
+  .builder-layout {
+    grid-template-columns: 5fr 3fr;
+    gap: 20px;
+  }
+}
+
+.builder-panel {
+  min-width: 0;
+}
+
+.builder-panel > h1 {
+  text-align: center;
+  margin: 0 0 0px;
+  font-size: clamp(2.1rem, 4.8vw, 4.15rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 1120px) {
+  
+}
+
+@media (max-width: 780px) {
+  .page-shell {
+    width: 100%;
+    padding: 14px 0 26px;
+  }
+
   
 }
