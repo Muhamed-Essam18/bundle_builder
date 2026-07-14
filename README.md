@@ -25,6 +25,10 @@ This project was built from the task brief for the Frontend Take-Home Bundle Bui
 
 ## Overview
 
+Live production URL:
+
+- https://bundle-builder-three-lovat.vercel.app/
+
 The UI is a two-column shopping configuration experience:
 
 - Left: a four-step accordion bundle builder
@@ -271,7 +275,10 @@ npm run dev
 - MONGODB_DB
   - Database name (optional if using fallback mode)
 - NEXT_PUBLIC_SITE_URL
-  - Base URL used for server-side fetch fallback
+  - Base URL used for server-side fetches
+  - Local example: http://localhost:3000
+  - Production example: https://bundle-builder-three-lovat.vercel.app
+  - Do not include a trailing slash
 
 ## Scripts
 
@@ -298,10 +305,10 @@ npm run start
 To validate fallback behavior:
 
 1. Set an invalid MONGODB_URI (or stop DB connectivity).
-2. If you are not authorized , fallback will run automatically 
-2. Run npm run dev.
-3. Open /api/products and verify data still returns.
-4. Open the app and confirm UI loads with fallback products/steps.
+2. If you are not authorized, fallback will run automatically.
+3. Run npm run dev.
+4. Open /api/products and verify data still returns.
+5. Open the app and confirm UI loads with fallback products/steps.
 
 ## Decisions and Tradeoffs
 
