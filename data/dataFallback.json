@@ -1,0 +1,290 @@
+{
+  "steps": [
+{
+  "_id": {
+    "$oid": "6a528e05285ace543a9bdb53"
+  },
+  "id": "cameras",
+  "label": "STEP 1 OF 4",
+  "title": "Choose your cameras",
+  "nextLabel": "Choose your plan",
+  "iconImage": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787493/icons/step1_e4uy6a.png"
+},
+{
+  "_id": {
+    "$oid": "6a528e05285ace543a9bdb54"
+  },
+  "id": "plan",
+  "label": "STEP 2 OF 4",
+  "title": "Choose your plan",
+  "nextLabel": "Choose your sensors",
+  "iconImage": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787494/icons/step2_psoyqp.png"
+},
+{
+  "_id": {
+    "$oid": "6a528e05285ace543a9bdb55"
+  },
+  "id": "sensors",
+  "label": "STEP 3 OF 4",
+  "title": "Choose your sensors",
+  "nextLabel": "Add extra protection",
+  "iconImage": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787494/icons/step3_byojw4.png"
+},
+{
+  "_id": {
+    "$oid": "6a528e05285ace543a9bdb56"
+  },
+  "id": "protection",
+  "label": "STEP 4 OF 4",
+  "title": "Add extra protection",
+  "nextLabel": "Review your system",
+  "iconImage": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787494/icons/step4_z7abe8.png"
+}],
+  "products": [
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba28"
+  },
+  "id": "cam-v4",
+  "stepId": "cameras",
+  "category": "Cameras",
+  "title": "Wyze Cam v4",
+  "description": "The clearest Wyze Cam ever made.",
+  "learnMoreUrl": "#",
+  "badge": "Save 22%",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787493/cam%20v4/White_vwh5yu.png",
+  "price": 27.98,
+  "compareAt": 35.98,
+  "variants": [
+    {
+      "id": "white",
+      "label": "White",
+      "swatch": "#f5f5f5",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787493/cam%20v4/White_vwh5yu.png"
+    },
+    {
+      "id": "grey",
+      "label": "Grey",
+      "swatch": "#9ca3af",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787493/cam%20v4/grey_tzw1wn.avif"
+    },
+    {
+      "id": "black",
+      "label": "Black",
+      "swatch": "#111827",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787492/cam%20v4/black_iay6ja.jpg"
+    }
+  ],
+  "defaultVariantId": "white",
+  "initialQuantities": {
+    "white": 1,
+    "grey": 0,
+    "black": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba29"
+  },
+  "id": "cam-pan-v3",
+  "stepId": "cameras",
+  "category": "Cameras",
+  "title": "Wyze Cam Pan v3",
+  "description": "360° pan and 180° tilt security camera.",
+  "learnMoreUrl": "#",
+  "badge": "Save 12%",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787493/Wyze%20cam%20oan%20v3/White_tahb2y.png",
+  "price": 23.99,
+  "compareAt": 28.99,
+  "variants": [
+    {
+      "id": "white",
+      "label": "White",
+      "swatch": "#f8fafc",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787493/Wyze%20cam%20oan%20v3/White_tahb2y.png"
+    },
+    {
+      "id": "black",
+      "label": "Black",
+      "swatch": "#171717",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787492/Wyze%20cam%20oan%20v3/Black_acv3ie.avif"
+    }
+  ],
+  "defaultVariantId": "white",
+  "initialQuantities": {
+    "white": 2,
+    "black": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba2a"
+  },
+  "id": "cam-floodlight",
+  "stepId": "cameras",
+  "category": "Cameras",
+  "title": "Wyze Cam Floodlight v2",
+  "description": "2K floodlight camera with a 160° view.",
+  "learnMoreUrl": "#",
+  "badge": "Save 22%",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787492/Wyze%20Cam%20Floodlight%20v2/White_vnnxnu.png",
+  "price": 69.98,
+  "compareAt": 89.98,
+  "variants": [
+    {
+      "id": "white",
+      "label": "White",
+      "swatch": "#f8fafc",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787492/Wyze%20Cam%20Floodlight%20v2/White_vnnxnu.png"
+    },
+    {
+      "id": "black",
+      "label": "Black",
+      "swatch": "#171717",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787492/Wyze%20Cam%20Floodlight%20v2/Black_ph4ihz.jpg"
+    }
+  ],
+  "defaultVariantId": "white",
+  "initialQuantities": {
+    "white": 0,
+    "black": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba2b"
+  },
+  "id": "duo-doorbell",
+  "stepId": "cameras",
+  "category": "Cameras",
+  "title": "Wyze Duo Cam Doorbell",
+  "description": "Two cameras. Two views. Double the porch protection.",
+  "learnMoreUrl": "#",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787330/dcrtjsi1ufnhr2veqtgl.png",
+  "price": 69.98,
+  "initialQuantities": {
+    "default": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba2c"
+  },
+  "id": "battery-cam-pro",
+  "stepId": "cameras",
+  "category": "Cameras",
+  "title": "Wyze Battery Cam Pro",
+  "description": "2.5K HDR battery camera with no outlet needed.",
+  "learnMoreUrl": "#",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787492/Wyze%20Battery%20Cam%20Pro/White_ktsyxl.png",
+  "price": 89.98,
+  "variants": [
+    {
+      "id": "white",
+      "label": "White",
+      "swatch": "#f8fafc",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787492/Wyze%20Battery%20Cam%20Pro/White_ktsyxl.png"
+    },
+    {
+      "id": "black",
+      "label": "Black",
+      "swatch": "#111827",
+      "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787492/Wyze%20Battery%20Cam%20Pro/Black_yuriym.avif"
+    }
+  ],
+  "defaultVariantId": "white",
+  "initialQuantities": {
+    "white": 0,
+    "black": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba2d"
+  },
+  "id": "cam-unlimited",
+  "stepId": "plan",
+  "category": "Plan",
+  "title": "Cam Unlimited",
+  "description": "Unlimited cloud recording for your selected cameras.",
+  "learnMoreUrl": "#",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783951927/Plan_wdy1gn.png",
+  "price": 9.99,
+  "compareAt": 12.99,
+  "locked": true,
+  "initialQuantities": {
+    "default": 1
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba2e"
+  },
+  "id": "motion-sensor",
+  "stepId": "sensors",
+  "category": "Sensors",
+  "title": "Wyze Sense Motion Sensor",
+  "description": "Motion alerts with tiny and discreet hardware.",
+  "learnMoreUrl": "#",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787330/hcxvs6tzouudxspegmnj.webp",
+  "price": 29.99,
+  "locked": true,
+  "initialQuantities": {
+    "default": 2
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba2f"
+  },
+  "id": "sense-hub",
+  "stepId": "sensors",
+  "category": "Sensors",
+  "title": "Wyze Sense Hub (Required)",
+  "description": "Required base hub for Wyze Sense devices.",
+  "learnMoreUrl": "#",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787330/uoih3tbksvnby76dlztl.png",
+  "price": 0,
+  "compareAt": 29.92,
+  "locked": true,
+  "initialQuantities": {
+    "default": 1
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba30"
+  },
+  "id": "microsd-256",
+  "stepId": "protection",
+  "category": "Accessories",
+  "title": "Wyze MicroSD Card (256GB)",
+  "description": "Local backup storage for your selected cameras.",
+  "learnMoreUrl": "#",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787329/cjrtrnj4a9bikeknxe7k.webp",
+  "price": 20.98,
+  "locked": true,
+  "initialQuantities": {
+    "default": 2
+  }
+},
+{
+  "_id": {
+    "$oid": "6a52813a474f85678b67ba31"
+  },
+  "id": "fast-shipping",
+  "stepId": "protection",
+  "category": "Shipping",
+  "title": "Fast Shipping",
+  "description": "2-day delivery for in-stock bundle items.",
+  "learnMoreUrl": "#",
+  "image": "https://res.cloudinary.com/dyhahwczx/image/upload/v1783787330/mlzujzd1wvyswci37zqc.png",
+  "price": 0,
+  "compareAt": 5.99,
+  "locked": true,
+  "reviewOnly": true,
+  "initialQuantities": {
+    "default": 1
+  }
+}]
+}

@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import { getDb } from "@/lib/mongodb";
+import fallbackData from "@/data/dataFallback.json";
 
+const fallbackSteps = fallbackData.steps;
+const fallbackProducts = fallbackData.products;
 export async function GET() {
 	try {
 		const db = await getDb();
@@ -12,11 +15,11 @@ export async function GET() {
 
 		return NextResponse.json({ steps, products }, { status: 200 });
 	} catch (error) {
-		console.error("Failed to fetch steps and products", error);
+		console.error("Failed to fetch steps and products from MongoDB. Using fallback JSON.", error);
 
 		return NextResponse.json(
-			{ error: "Failed to fetch data from database" },
-			{ status: 500 }
+			{ steps: fallbackSteps, products: fallbackProducts },
+			{ status: 200 }
 		);
 	}
 }
