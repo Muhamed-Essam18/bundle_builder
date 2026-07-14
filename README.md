@@ -243,8 +243,9 @@ npm install
 2. Create .env.local in project root:
 
 ```env
-MONGODB_URI=your_mongodb_connection_string
-MONGODB_DB=your_database_name
+MONGODB_URI=mongodb://<db_username>:<db_password>@ac-szqqebn-shard-00-00.dgdoohc.mongodb.net:27017,ac-szqqebn-shard-00-01.dgdoohc.mongodb.net:27017,ac-szqqebn-shard-00-02.dgdoohc.mongodb.net:27017/?ssl=true&replicaSet=atlas-d02iqh-shard-0&authSource=admin&appName=Cluster0
+
+MONGODB_DB=BundleBuilder
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
@@ -297,6 +298,7 @@ npm run start
 To validate fallback behavior:
 
 1. Set an invalid MONGODB_URI (or stop DB connectivity).
+2. If you are not authorized , fallback will run automatically 
 2. Run npm run dev.
 3. Open /api/products and verify data still returns.
 4. Open the app and confirm UI loads with fallback products/steps.
@@ -321,18 +323,5 @@ To validate fallback behavior:
 - No automated test suite included yet (logic currently verified manually and via lint/build).
 - API currently expects collection names Steps and Products exactly.
 
-## Next Improvements
 
-- Migrate product/review images to next/image with configured domains
-- Add reducer and utility unit tests
-- Add interaction tests for variant switching and quantity sync
-- Add runtime schema validation for API payloads
-- Add explicit loading, empty, and failed-fetch states
-- Add visual regression snapshots for key responsive breakpoints
 
----
-
-If needed, I can also provide:
-
-- A requirement-by-requirement checklist mapped to implementation
-- A short walkthrough video of interactions and architecture choices
